@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+.logo_navbar {
+  width: 12rem;
+  height: 3rem;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.dropdown > i {
+  color: white;
+  position: absolute;
+  margin: 10px;
+}
+
+.dropdown > select {
+  padding: 8px 10px;
+  border-radius: 2px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.dropdown > select > option {
+  color: white;
+  background-color: grey;
+}
+
+.btn_navbar {
+  background-color: rgb(229, 9, 19);
+  padding: 7px 17px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .logo_navbar {
+    width: 5rem;
+    height: 2rem;
+  }
+  .inputs {
+    gap: 0.5rem;
+  }
+  .dropdown > i {
+    padding: 0;
+    margin: 5px;
+  }
+  .dropdown > select {
+    padding: 0.2rem;
+    padding-left: 25px;
+  }
+  .dropdown > select > option {
+    font-size: 12px;
+  }
+  .btn_navbar {
+    padding: 0.2rem;
+    width: 4rem;
+    font-size: 12pt;
+  }
+}
