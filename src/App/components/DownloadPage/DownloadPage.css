@@ -1,0 +1,43 @@
+.download {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+  border-bottom: 10px solid #222;
+}
+.left_d {
+  padding: 2rem 0;
+}
+.left_d > img {
+  object-fit: cover;
+  max-width: 500px;
+}
+
+.right_d {
+  padding: 2rem;
+}
+.right_d > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.right_d > h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .download {
+    flex-direction: column;
+  }
+  .right_d {
+    text-align: center;
+  }
+
+  .right_d > h2 {
+    margin-top: 20px;
+  }
+  .left_d > img {
+    max-width: 360px;
+  }
+}
