@@ -17,6 +17,7 @@
 
 .right_d {
   padding: 2rem;
+  max-width: 700px;
 }
 .right_d > h1 {
   font-size: 3rem;

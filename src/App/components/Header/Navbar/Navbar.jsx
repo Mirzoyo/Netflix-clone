@@ -15,8 +15,7 @@ const Navbar = () => {
           <i class="fa-solid fa-globe"></i>
           <select
             onChange={(e) => setMyValue(e.target.value)}
-            defaultValue={myValue}
-          >
+            defaultValue={myValue}>
             <option>English</option>
             <option>Russian</option>
           </select>
