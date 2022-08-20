@@ -18,8 +18,8 @@
 }
 .dropdown > i {
   color: white;
-  position: absolute;
-  margin: 10px;
+  position: relative;
+  left: 10px;
 }
 
 .dropdown > select {

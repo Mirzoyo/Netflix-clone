@@ -28,12 +28,16 @@ a{
 
 .ulContainer > ul > li {
     margin: 10px 0;
+    cursor: pointer;
 }
 
-i {
-    color: white;
+.ulContainer > ul > li:hover {
+    text-decoration: underline;
+}
+
+.container > i {
     position: relative;
-    left: 5px;
+    left: 10px;
 }
 
 select {
@@ -60,10 +64,6 @@ select>option {
     }
     .container {
         padding: 0 15px;
-    }
-
-    option {
-        font-size: 14px;
     }
  }
 
