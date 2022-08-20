@@ -1,0 +1,70 @@
+ul {
+    list-style: none;
+}
+
+a{
+    color: rgb(171, 169, 169);
+}
+
+.wrapper {
+    background-color: #000;
+    width: 100%;
+    color: gray;
+    padding: 4rem 0 2rem 0;
+}
+
+.container {
+    background-color: #000;
+    width: 70%;
+    margin: auto;
+}
+
+.ulContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.ulContainer > ul > li {
+    margin: 10px 0;
+}
+
+i {
+    color: white;
+    position: relative;
+    left: 5px;
+}
+
+select {
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px 1.5rem;
+    margin: 2rem 0 10px 0;
+    position: relative;
+    left: -1rem;
+}
+
+select>option {
+    color: white;
+    background-color: grey;
+}
+
+
+@media only screen and (max-width:400px){
+
+    .ulContainer > ul > li {
+        font-size: 14px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+
+    option {
+        font-size: 14px;
+    }
+ }
+
+
