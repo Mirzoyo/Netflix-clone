@@ -1,6 +1,7 @@
 import React from "react";
 import DownloadPage from "../../components/DownloadPage/DownloadPage";
 import Header from "../../components/Header/Header";
+import Kids from "../../components/Kids/Kids";
 import Stream from "../../components/Stream/Stream";
 import Smart from "../../components/Smart/Smart";
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Smart />
       <DownloadPage />
       <Stream />
+      <Kids />
     </div>
   );
 };
