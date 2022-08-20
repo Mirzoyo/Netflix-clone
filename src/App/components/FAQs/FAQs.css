@@ -1,0 +1,30 @@
+.faq_page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 0;
+}
+
+.faq_page > h1 {
+  text-align: center;
+  color: white;
+}
+
+.faq-row {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.row-title-text {
+  color: white;
+}
+
+.faq-body {
+  background-color: black;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 1000px) {
+  .faq-row {
+    width: 90%;
+  }
+}
