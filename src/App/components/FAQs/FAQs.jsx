@@ -8,11 +8,10 @@ const FAQs = () => {
     tabFocus: true,
   };
   const styles = {
-    bgColor: "white",
-    titleTextColor: "red",
     rowContentColor: "grey",
     arrowColor: "white",
-    fontSize: "4rem",
+    rowContentPaddingTop: "25px",
+    rowContentPaddingBottom: "25px",
   };
   const data = {
     rows: [
@@ -56,6 +55,13 @@ const FAQs = () => {
     <div className="faq_page">
       <h1>Frequently Asked Questions</h1>
       <Faq data={data} styles={styles} config={config} />
+      <span className="content_email">
+        Ready to watch? Enter your email to create or restart your membership.
+      </span>
+      <div className="email_faq">
+        <input type="text" placeholder="Email address" />
+        <button className="btn_email_faq">Get Started</button>
+      </div>
     </div>
   );
 };

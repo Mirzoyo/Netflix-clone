@@ -1,8 +1,8 @@
 .faq_page {
   background-color: black;
   width: 100%;
-  height: 100vh;
   padding: 3rem 0;
+  color: white;
 }
 
 .faq_page > h1 {
@@ -23,8 +23,55 @@
   background-color: black;
   padding: 2rem 0;
 }
+.content_email {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.email_faq {
+  margin-top: 2rem;
+  outline: none;
+  max-width: 680px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email_faq > input {
+  width: 550px;
+  padding: 1rem 0.5rem;
+  font-size: 20px;
+  border: none;
+}
+.btn_email_faq {
+  background-color: rgb(229, 9, 19);
+  padding: 20px;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
 @media screen and (max-width: 1000px) {
   .faq-row {
     width: 90%;
+  }
+  .faq_page > span {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .email_faq {
+    flex-direction: column;
+  }
+  .email_faq > input {
+    width: 80%;
+  }
+  .btn_email_faq {
+    margin: 1rem 0;
   }
 }
