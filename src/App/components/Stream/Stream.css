@@ -1,0 +1,45 @@
+.stream {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 6rem;
+  border-bottom: 10px solid #222;
+}
+.content_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.content_container > :nth-child(1) {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.content_container > :nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.content_container > :nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.content_container > :nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .stream {
+    flex-direction: column;
+  }
+  .stream > img {
+    width: 300px;
+  }
+}

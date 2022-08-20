@@ -1,13 +1,17 @@
 import React from "react";
+import DownloadPage from "../../components/DownloadPage/DownloadPage";
 import Header from "../../components/Header/Header";
 import Kids from "../../components/Kids/Kids";
-import SmartTv from "../../components/SmartTV/SmartTv";
+import Stream from "../../components/Stream/Stream";
+import Smart from "../../components/Smart/Smart";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <SmartTv />
+      <Smart />
+      <DownloadPage />
+      <Stream />
       <Kids />
     </div>
   );
