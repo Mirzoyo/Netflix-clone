@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border-bottom: 10px solid #222;
+}
+
+.kidsContainer {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    width: 85%;
+    margin: 0 auto;
+}
+.kidsContainer > img {
+    width: 45%;
+    float: left;
+}
+
+.kidsContact {
+    max-width:500px;
+    margin-left: 5rem;
+}
+.kidsContact > h1 {
+    font-size: 3rem;
+}
+.kidsContact > p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width:950px){
+    .kidsContainer {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .kidsContainer > img {
+        width: 90%;
+    }
+    .kidsContact {
+        margin: 0;
+        text-align: center;
+    }
+
+    .kidsContact > h1{
+        font-size: 2.5rem;
+    }
+    .kidsContact > p {
+        font-size: 1.5rem;
+    }
+}
