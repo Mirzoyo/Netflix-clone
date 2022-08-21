@@ -8,24 +8,60 @@
   border-bottom: 10px solid #222;
 }
 .left_d {
-  padding: 2rem 0;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+  width: 50%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
-.left_d > img {
+.download_status {
+  border: 5px solid #222;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 10px;
+  width: 300px;
+  height: 80px;
+  transform: translate(76%, 480%);
+  background: #000;
+}
+.image_download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_download > img {
+  height: 100%;
+  width: 40px;
   object-fit: cover;
-  max-width: 500px;
+  margin-right: 1rem;
+}
+.content_image > h1 {
+  font-size: 1rem;
+}
+.content_image > p {
+  color: #0071eb;
+}
+.download_status > :nth-child(2) {
+  color: #0071eb;
 }
 
 .right_d {
   padding: 2rem;
+  max-width: 700px;
+  text-align: start;
 }
 .right_d > h1 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 3.5rem;
 }
 .right_d > h2 {
   font-weight: 400;
   font-size: 2rem;
 }
+
 @media screen and (max-width: 1000px) {
   .download {
     flex-direction: column;
@@ -39,5 +75,11 @@
   }
   .left_d > img {
     max-width: 360px;
+  }
+  .left_d {
+    width: 80%;
+  }
+  .download_status {
+    transform: translate(2%, 450%);
   }
 }
