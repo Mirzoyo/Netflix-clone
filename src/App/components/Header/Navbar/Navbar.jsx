@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [myValue, setMyValue] = useState("");
+  let navigate = useNavigate();
   return (
     <div className="navbar">
       <img
@@ -15,12 +17,15 @@ const Navbar = () => {
           <i class="fa-solid fa-globe"></i>
           <select
             onChange={(e) => setMyValue(e.target.value)}
-            defaultValue={myValue}>
+            defaultValue={myValue}
+          >
             <option>English</option>
             <option>Russian</option>
           </select>
         </div>
-        <button className="btn_navbar">Sign In</button>
+        <button onClick={() => navigate("/movies")} className="btn_navbar">
+          Browse Movies
+        </button>
       </div>
     </div>
   );
